@@ -10,6 +10,10 @@ jobs:
   build:
     runs-on: ubuntu-latest
 
+    # 👇 Environment variables available to ALL steps
+    env:
+      API_TOKEN: ${{ secrets.API_TOKEN }}
+
     steps:
       - uses: actions/checkout@v3
 
