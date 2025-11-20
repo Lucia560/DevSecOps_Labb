@@ -13,6 +13,7 @@ jobs:
     # 👇 Environment variables available to ALL steps
     env:
       API_TOKEN: ${{ secrets.API_TOKEN }}
+      PYTHONPATH: .
 
     steps:
       - uses: actions/checkout@v3
